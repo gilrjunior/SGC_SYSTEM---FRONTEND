@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+.container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.table-container{
+
+    display: flex;
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.table {
+    text-align: center;
+    width: 75%;
+    border-collapse: collapse;
+    font-family: Quicksand;
+}
+
+.table thead th {
+    
+    padding: 30px;
+    font-size: 13px;
+    color: white;
+    font-size: large;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.table thead{
+
+    background-color: #003975;
+}
+.table tbody tr:nth-child(even) {
+      background: #cececeb7; 
+}
+.table tbody tr td {
+      border: none;
+      padding: 20px 30px;
+      font-size: 16px;
+      vertical-align: middle; 
+}

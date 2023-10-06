@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+.container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.register-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #A0A0A0;
+    flex-direction: column;
+
+}
+
+h1 {
+
+    font-family: Quicksand;
+    font-weight: bolder;
+    font-size: x-larger;
+
+}
+
+input {
+
+    width: 200px;
+    height: 40px;
+    flex-shrink: 0;
+    font-size: large;
+    font-family: Quicksand;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: 1px solid #A0A0A0;
+
+}
+
+input:focus{
+
+    outline: 2px solid #003975;
+
+}
+
+.form-container{
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 250px;
+
+}
+
+.btn {
+    width: 150px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #003975;
+    border: none;
+    color: white;
+    font-family: Quicksand;
+    font-weight: bolder;
+
+}
+
+.btn-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
