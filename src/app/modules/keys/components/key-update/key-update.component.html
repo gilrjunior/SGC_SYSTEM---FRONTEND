@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="register-container">
+        <h1>Atualizar</h1>
+            <div class="form-container">
+                <select (click)="updateinputs()" [(ngModel)]="option" name="keys" id="keys">
+                        <option [value] = "0">
+                            Selecione uma Chave
+                        </option>
+                        <option [value]="key.keyid" *ngFor="let key of keys">
+                            {{key.keyid}}
+                        </option>
+                </select>
+                <input id="id" type="text" placeholder="id" [(ngModel)]="keyid">
+                <input id="description" type="text" placeholder="Descrição" [(ngModel)]="description">
+                <div class="btn-container">
+                    <button (click)="updateKey()" class="btn">Atualizar</button>
+                </div>
+            </div>
+    </div>
+</div>

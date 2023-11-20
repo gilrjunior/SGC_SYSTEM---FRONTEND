@@ -45,6 +45,18 @@ input {
 
 }
 
+select {
+
+    height: 40px;
+    flex-shrink: 0;
+    font-size: large;
+    font-family: Quicksand;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: 1px solid #A0A0A0;
+
+}
+
 input:focus{
 
     outline: 2px solid #003975;

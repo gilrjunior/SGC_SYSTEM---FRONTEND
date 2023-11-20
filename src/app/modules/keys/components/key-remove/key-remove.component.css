@@ -3,7 +3,7 @@
 .container {
 
     display: flex;
-    justify-content: center;
+    justify-content:center;
     flex-direction: row;
     align-items: center;
     height: 100vh;
@@ -13,10 +13,10 @@
 .register-container{
 
     display: flex;
-    justify-content: center;
+    justify-content:center; 
     align-items: center;
     width: 400px;
-    height: 400px;
+    height: 350px;
     flex-shrink: 0;
     border-radius: 10px;
     border: 1px solid #A0A0A0;
@@ -35,6 +35,18 @@ h1 {
 input {
 
     width: 200px;
+    height: 40px;
+    flex-shrink: 0;
+    font-size: large;
+    font-family: Quicksand;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: 1px solid #A0A0A0;
+
+}
+
+select {
+
     height: 40px;
     flex-shrink: 0;
     font-size: large;

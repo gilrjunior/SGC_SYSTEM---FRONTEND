@@ -13,13 +13,31 @@ export class ApiService {
 
   getKeys(){
 
-    return this.http.get<Ikey[]>(`${environment.api}/keys`,{observe: 'response'})
+    return this.http.get<Ikey[]>(`${environment.api}/keys/get`,{observe: 'response'})
 
   }
 
-  insertKeys(key:Ikey){
+  registerKeys(key:Ikey){
 
-    return this.http.post<Ikey[]>(`${environment.api}/keyregister`,key,{observe: 'response'})
+    return this.http.post<Ikey[]>(`${environment.api}/keys/register`,key,{observe: 'response'})
+
+  }
+
+  searchKey(description: string){
+
+    return this.http.get<Ikey[]>(`${environment.api}/keys/search/${description}`,{observe: 'response'})
+
+  }
+
+  updateKey(key){
+
+    return this.http.post(`${environment.api}/keys/update`,key,{observe: 'response'})
+
+  }
+
+  removeKey(key){
+
+    return this.http.post(`${environment.api}/keys/remove`,key,{observe: 'response'})
 
   }
 

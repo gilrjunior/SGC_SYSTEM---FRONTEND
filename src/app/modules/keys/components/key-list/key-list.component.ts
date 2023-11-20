@@ -4,7 +4,6 @@ import { Ikey } from 'src/app/key/ikey';
 
 import { ApiService } from 'src/app/services/api.service';
 
-
 @Component({
   selector: 'app-key-list',
   templateUrl: './key-list.component.html',
@@ -14,6 +13,7 @@ import { ApiService } from 'src/app/services/api.service';
 export class KeyListComponent implements OnInit{
 
   public keys: Ikey[];
+  public description:string = "";
 
   ngOnInit(): void {
     this.getKeysFromBD();
@@ -27,6 +27,22 @@ export class KeyListComponent implements OnInit{
         this.keys = response.body
 
       })
+  }
+
+  SearchKey(){
+
+    if(this.description == ""){
+      this.description = "vazio"
+    }
+
+    this.apiService.searchKey(this.description).subscribe(response => {
+    
+      this.keys = response.body
+
+    })
+
+    this.description = ""
+
   }
 
 }

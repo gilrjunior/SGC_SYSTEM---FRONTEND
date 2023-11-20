@@ -26,17 +26,18 @@ export class KeyRegisterComponent implements OnInit {
 
       keyid: this.keyid,
       description: this.description,
-      key_situation: "disponível"
+      key_situation: "disponível",
+      status: true
 
     }
 
-    this.apiService.insertKeys(key).subscribe({next: (response) => {
+    this.apiService.registerKeys(key).subscribe({next: (response) => {
     
       var text = Object.values(response.body)
 
         if(response.status === 201){
             alert(text);
-            this.router.navigate(['keylist']); 
+            this.router.navigate(['keys/list']); 
         }else if(response.status === 202){
             alert(text)
         }

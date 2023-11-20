@@ -3,9 +3,17 @@
 .container {
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+
+}
+
+h1 {
+
+    font-family: Quicksand;
+    margin-bottom: 20px;
 
 }
 
@@ -27,7 +35,7 @@
 
 .table thead th {
     
-    padding: 30px;
+    padding: 30px;  
     font-size: 13px;
     color: white;
     font-size: large;
@@ -46,5 +54,41 @@
       border: none;
       padding: 20px 30px;
       font-size: 16px;
-      vertical-align: middle; 
+}
+
+.search {
+
+    display: flex;
+    margin-bottom: 40px
+
+}
+
+input {
+
+    width: 500px;
+    height: 40px;
+    flex-shrink: 0;
+    font-size: large;
+    font-family: Quicksand;
+    padding-left: 20px;
+    border-radius: 10px 0px 0px 10px;
+    border: 1px solid #A0A0A0;
+
+}
+
+svg {
+
+    width: 40px;
+    height: 42px;
+    border-radius: 0px 10px 10px 0px;
+    border: 1px solid #A0A0A0;
+    color: #A0A0A0;
+
+}
+
+svg:hover {
+
+    border: 2px solid black;
+    height: 40px;
+
 }

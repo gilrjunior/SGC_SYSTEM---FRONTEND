@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="register-container">
+        <h1>Remover</h1>
+            <div class="form-container">
+                <select (click)="getselect()" [(ngModel)]="option" name="keys" id="keys">
+                        <option [value] = "0">
+                            Selecione uma Chave
+                        </option>
+                        <option [value]="key.keyid" *ngFor="let key of keys">
+                            {{key.keyid}}
+                        </option>
+                </select>
+                <div class="btn-container">
+                    <button (click)="removeKey()" class="btn">Remover</button>
+                </div>
+            </div>
+    </div>
+</div>
+
